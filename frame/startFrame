@@ -1,0 +1,1 @@
+mount -t tmpfs -o size=128M tmpfs /home/pi/ramdisk/

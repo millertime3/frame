@@ -1,0 +1,1 @@
+wget -O - "https://picasaweb.google.com/data/feed/base/user/115341700119165085726/albumid/5963797622870562161?kind=photo" |sed 's/</\n</g' | grep media:content |sed 's/.*url='"'"'\([^'"'"']*\)'"'"'.*$/\1/' |awk -F'/' '{gsub($NF,"d/"$NF); print $0}'|wget -i -

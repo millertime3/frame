@@ -1,0 +1,2 @@
+killall feh
+killall unclutter

@@ -1,0 +1,1 @@
+curl -s https://www.google.com/accounts/ClientLogin --data-urlencode Email=email --data-urlencode Passwd=pass -d accountType=GOOGLE -d source=Google-cURL-Example -d service=lh2 | sed 1d | sed 1d  | sed 's/.*Auth=\(.*\)/\1/'
